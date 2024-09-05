@@ -152,7 +152,7 @@ static NSString * const kSkipButtonText = @"Skip";
     
     self.pageVC.view.frame = self.view.frame;
     self.moviePlayerController.view.frame = self.view.frame;
-    self.skipButton.frame = CGRectMake(CGRectGetMaxX(self.view.frame) - kSkipButtonWidth, CGRectGetMaxY(self.view.frame) - safedUnderPageControlPadding - kSkipButtonHeight, kSkipButtonWidth, kSkipButtonHeight);
+//    self.skipButton.frame = CGRectMake(CGRectGetMaxX(self.view.frame) - kSkipButtonWidth, CGRectGetMaxY(self.view.frame) - safedUnderPageControlPadding - kSkipButtonHeight, kSkipButtonWidth, kSkipButtonHeight);
     self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(self.view.frame) - safedUnderPageControlPadding - kPageControlHeight, self.view.frame.size.width, kPageControlHeight);
 }
 
