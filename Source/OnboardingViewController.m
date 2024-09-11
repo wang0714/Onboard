@@ -306,6 +306,13 @@ static NSString * const kSkipButtonText = @"Skip";
     UIViewController *viewController = [pageViewController.viewControllers lastObject];
     NSInteger newIndex = [self.viewControllers indexOfObject:viewController];
     [self.pageControl setCurrentPage:newIndex];
+    if (self.fadeSkipButtonOnLastPage) {
+        if(newIndex == (self.viewControllers.count-1)){
+            self.skipButton.hidden = YES;
+        }else{
+            self.skipButton.hidden = NO;
+        }
+    }
 }
 
 - (void)moveNextPage {
